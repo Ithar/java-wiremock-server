@@ -3,9 +3,17 @@ apply plugin: 'eclipse'
 apply plugin: 'war'
 apply plugin: 'maven'
 
-sourceCompatibility = 1.6
 group = 'com.github.tomakehurst'
 version = 1
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_1_8
+	targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+war {
+	archiveName 'wiremock-server.war'
+}
 
 repositories {
 	mavenCentral()
