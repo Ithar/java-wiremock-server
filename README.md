@@ -1,6 +1,12 @@
 # java-wiremock-server
 An implementation of Wiremock running on a servlet container (Tomcat)
 
+
+#### Features 
+- API mocking 
+
+#### Prerequisites
+
 Note 1: Requires local installation of Tomcat.
 
 Note 2: In order to access tomcat manager a new user needs to be created. 
@@ -8,9 +14,6 @@ Note 2: In order to access tomcat manager a new user needs to be created.
 <role rolename="manager-gui"/>
 <user username="admin" password="admin" roles="manager-gui"/>
 ```
-
-#### Features 
-- API mocking 
  
 ## 
 
